@@ -9,7 +9,7 @@
         $.ajax({
             url : 'http://localhost:3020/falkon',
             success : function(json) {
-                $.each(json, function(message, index) {
+                $.each(json, function(index, message) {
                    addAMessage(message);
                 });
             }
